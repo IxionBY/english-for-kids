@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div class="app-wrapper">
+        <div class="header-container">
+            <nav role="navigation">
+                <div class="menuToggle">
+                    <input id="menu-toggle" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu green" id="nav-menu">
+                        <li><a class="nav-item active" href="#/">Main Page</a></li>
+                        <li><a class="nav-item" href="#/cards">Action (set A)</a></li>
+                        <li><a class="nav-item" href="#/cards">Action (set B)</a></li>
+                        <li><a class="nav-item" href="#/cards">Action (set C)</a></li>
+                        <li><a class="nav-item" href="#/cards">Adjective</a></li>
+                        <li><a class="nav-item" href="#/cards">Animal (set A)</a></li>
+                        <li><a class="nav-item" href="#/cards">Animal (set B)</a></li>
+                        <li><a class="nav-item" href="#/cards">Clothes</a></li>
+                        <li><a class="nav-item" href="#/cards">Emotion</a></li>
+                        <li><a class="statistics" href="#/cards">Statistics</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" class="switch-input" checked="">
+                    <span class="switch-label" data-on="Train" data-off="Play"></span>
+                    <span class="switch-handle"></span>
+                </label>
+            </div>
+        </div>
+        <div class="wrapper-content">
+            <div class="rating">
+
+            </div>
+            <div class="card-container">
+                
+            </div>
+            <div class="button-container">
+                <button class="start-btn none">Start game</button>
+                <button class="repeat-btn none"></button>
+            </div>
+            <audio class="audio-game" ></audio>
+            <audio class="audio-effect" ></audio>
+        </div>
+    </div>
+    <div class="button-stat">
+        <button class="close-stat-btn display-none">Close statistics</button>
+        <button class="reset-stat-btn display-none">Reset statistics</button>
+    </div>
+    <div class="statistic display-none">
+        <table class="statistic-table">
+            <thead>
+                <tr>
+                    <th id="1">Category</th> 
+                    <th id="2">Word</th> 
+                    <th id="3">Translate</th>
+                    <th id="4">Train</th>
+                    <th id="5">Correct</th>
+                    <th id="6">Wrong</th>
+                    <th id="7">Wrong %</th>
+                </tr> 
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>                      
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>
